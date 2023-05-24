@@ -17,14 +17,15 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 from Chubby.views import *
+from Chinni.views import *
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    #String Response
+    #app1 responses
     path('one/',one,name='one'),
-    path('two/',two,name='two'),
-    #html page response
     path('home/',home,name='home'),
+    #app2 responses
+    path('two/',two,name='two'),
     path('work/',work,name='work'),
     
 ]
