@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+ <html>
+ <head>
+ 	
+ 	<title>translate</title>
+ 	<style >
+ 		#parent
+ 		{
+        box-shadow: 0 0 10px black;
+ 		width: 400px;
+ 		height: 360px;
+ 		margin: 150px auto;
+        position: relative;
+ 		}
+        #parent>img
+        {
+            width: inherit;
+            height: inherit;
+            transition: all 1s linear 0s;
+        }
+        #parent:hover
+        {
+            cursor: pointer;
+        }
+        #parent:hover>img
+        {
+            transform: translateY(-350px);
+        }
+        #parent>#one
+        {
+        background-color: white;
+        text-align: center;
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        height: 360px;
+        width: 400px;
+        transition: all 1s linear 0s;
+        }
+         #parent>#one>img
+        {
+            width: inherit;
+            height: inherit;
+        }
+        #parent:hover>#one
+        {
+            transform: translatex(390px);
+        }
+
+         #parent>#one>#second
+        {
+        background-color: white;
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        height: 360px;
+        width: 400px;
+        transition: all 1s linear 0s;
+        }
+         #parent>#one>#second>img
+        {
+            width: inherit;
+            height: inherit;
+        }
+        #parent:hover>#one>#second
+        {
+            transform: translatex(-790px);
+        }
+
+         #parent>#one>#second>#three
+        {
+        background-color: white;
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        height: 360px;
+        width: 400px;
+        transition: all 1s linear 0s;
+        }
+         #parent>#one>#second>#three>img
+        {
+            width: inherit;
+            height: inherit;
+        }
+        #parent:hover>#one>#second>#three
+        {
+            transform: translate(400px,300px);
+        }
+
+
+         #parent>#one>#second>#three>#child
+        {
+        background-color: white;
+        position: absolute;
+        text-align: center;
+        top: 220px;
+        left: 0px;
+        height: 100px;
+        transition: all 1s linear 0s;
+        }
+
+       
+    </style>
+ </head>
+ <body>
+ <div id="parent">
+ 	<img src="https://t4.ftcdn.net/jpg/05/65/63/49/360_F_565634925_lst3l73JiKkLmHJ9Ql59jpxvOtDw6O4o.jpg">
+    <div id="one">
+    <img src="https://ynet-pic1.yit.co.il/picserver5/wcm_upload/2023/02/16/H1ueKos6j/shutterstock_2213684645.jpg">
+     <div id="second">
+    <img src="https://thumbs.dreamstime.com/b/fantasy-mystical-bird-phoenix-mountains-generative-ai-270068529.jpg">
+     <div id="three">
+         <img src="https://w1.pngwing.com/pngs/762/865/png-transparent-phoenix-bird-drawing-chicken-painting-digital-art-eagle-beak-bird-of-prey-feather-thumbnail.png">
+     </div>
+     <div id="child">
+     </div>
+ </div>
+ </div>
+ </div>
+ 
+ </body>
+ </html>
